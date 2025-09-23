@@ -17,7 +17,7 @@ const Feature130 = () => {
                         <Code className="size-6" />
                         <h4 className="text-xl font-semibold">Fast & Intuitive Setup</h4>
                         <p className="text-base font-normal text-muted-foreground">
-                            Rewan HR's intuitive design allows you to quickly get started. With a user-friendly interface for managing customers, contacts, and products, your team can begin building relationships and accelerating sales from day one. Our streamlined process ensures you spend less time on setup and more time on what matters most—your customers.
+                            Rewan HR&apos;s intuitive design allows you to quickly get started. With a user-friendly interface for managing customers, contacts, and products, your team can begin building relationships and accelerating sales from day one. Our streamlined process ensures you spend less time on setup and more time on what matters most—your customers.
             </p>
                     </div>
                     <img
@@ -55,7 +55,7 @@ const Feature130 = () => {
                     <h4 className="text-xl font-semibold">Stay Ahead with Smart Automation</h4>
                     <p className="text-base font-normal text-muted-foreground">
                         Our HR is designed to work for you, not the other way around. The dashboard provides a real-time overview of your business, highlighting critical information at a glance. With automated notifications for
-                        contracts approaching their renewal date, you'll never miss a crucial follow-up. It’s proactive, smart, and puts you in control.
+                        contracts approaching their renewal date, you&apos;ll never miss a crucial follow-up. It’s proactive, smart, and puts you in control.
           </p>
                 </div>
 
