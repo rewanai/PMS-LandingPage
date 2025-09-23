@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy:local": "npx serve -s out -l 5000"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
