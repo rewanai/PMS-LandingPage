@@ -8,6 +8,7 @@ import {
     Users,
 } from "lucide-react";
 import React from "react";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path as needed
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,9 +20,10 @@ const Compare3 = () => {
                 {/* Header */}
                 <div className="flex flex-col items-center gap-4 text-center">
                     <Badge variant="outline">Why Us</Badge>
-                    <h2 className="mx-auto max-w-2xl text-4xl font-semibold sm:text-5xl">
+                    <h2 className={`${shiba.className} mx-auto max-w-2xl text-4xl font-normal sm:text-5xl`}>
                         See How Rewan HR Outperforms Manual HR and Other Tools
-            </h2>
+</h2>
+
                     <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
                         Discover why growing teams choose our AI-powered HR solution over spreadsheets, email approvals, and outdated systems
             </p>

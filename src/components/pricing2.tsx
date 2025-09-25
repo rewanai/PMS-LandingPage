@@ -1,4 +1,5 @@
 "use client";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path as needed
 
 import { CircleCheck, Users, Rocket, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -69,10 +70,11 @@ const Pricing2 = () => {
             <div className="mx-auto w-full max-w-6xl px-6">
                 {/* Heading */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-semibold text-pretty lg:text-6xl">
+                    <h2 className={`${shiba.className} text-4xl font-normal text-pretty lg:text-6xl`}>
                         Unlock Productivity{" "}
                         <span className="text-primary">for Every Role</span>
                     </h2>
+
                     <p className="mt-4 max-w-2xl mx-auto text-muted-foreground lg:text-lg">
                         Our platform is built with role-based access, ensuring everyone—
                         from employees to executives—has the right tools at their

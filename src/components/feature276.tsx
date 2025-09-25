@@ -10,6 +10,7 @@ import {
     Zap,
 } from "lucide-react";
 import React, { useState } from "react";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path as needed
 
 import { cn } from "@/lib/utils";
 
@@ -55,9 +56,10 @@ const Feature276 = () => {
                 <p className="bg-primary rounded-full px-4 py-1 text-xs text-white uppercase text-center">
                     Why Us
                 </p>
-                <h2 className="relative text-primary z-20 py-2 text-center font-sans text-5xl font-semibold tracking-tighter md:py-7 lg:text-6xl">
+                <h2 className={`${shiba.className} relative text-primary z-20 py-2 text-center text-5xl font-normal tracking-tighter md:py-7 lg:text-6xl`}>
                     Why Choose Rewan HR
-                </h2>
+</h2>
+
                 <p className="text-md text-muted-foreground mx-auto max-w-xl text-center lg:text-lg">
                     Empower your team with a smarter, more connected HR experience.
                 </p>

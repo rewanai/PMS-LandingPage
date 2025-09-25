@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { shiba } from "@/lib/fonts"; // Adjust the path if necessary
 
 import { cn } from "@/lib/utils";
 
@@ -72,9 +73,10 @@ const Timeline2 = () => {
     return (
         <section id="how" className="py-32">
             <div className="mx-auto max-w-7xl px-4 flex flex-col items-center">
-                <h1 className="mb-14 max-w-3xl text-center text-4xl font-semibold text-balance md:text-5xl">
+                <h1 className={`${shiba.className} mb-14 max-w-3xl text-center text-4xl font-normal text-balance md:text-5xl`}>
                     Transform your workflow with our solution
-                </h1>
+</h1>
+
                 <div className="flex w-full max-w-6xl justify-center gap-20">
                     <div className="flex flex-col gap-16 md:w-[49%]">
                         {sections.map((section, index) => (
