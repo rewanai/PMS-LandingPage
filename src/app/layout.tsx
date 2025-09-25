@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { shiba } from "../lib/fonts"; // ✅ adjust if layout is not inside /app
 
 export const metadata: Metadata = {
   title: "HR Landing Page",

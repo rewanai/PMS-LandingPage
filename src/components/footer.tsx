@@ -56,7 +56,7 @@ const Footer8 = ({
                                 <h2 className="text-xl font-semibold text-white">{logo.title}</h2>
                             </div>
                             <p className="text-white/80">
-                                Your AI Cyber Employee, built to accelerate your business.
+                                Your AI Digital Workforce, built to accelerate your business.
           </p>
                             <ul className="flex items-center space-x-6">
                                 <li className="hover:scale-110 hover:text-gray-200 transition">

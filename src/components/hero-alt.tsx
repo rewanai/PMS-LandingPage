@@ -2,7 +2,7 @@ import { ArrowRight, DollarSign, Medal, Sparkle, Zap } from "lucide-react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-
+import { shiba } from "../lib/fonts";
 const Hero68 = () => {
     return (
         <section className="py-6">
@@ -11,7 +11,7 @@ const Hero68 = () => {
                     <div className="mx-auto max-w-3xl">
                         {/* Version Badge */}
                         <a
-                            href="#"
+
                             className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm"
                         >
                             <Badge>New</Badge>
@@ -20,9 +20,9 @@ const Hero68 = () => {
                         </a>
 
                         {/* Title */}
-                        <h1 className="my-4 mb-6 text-center text-3xl font-semibold lg:text-8xl">
+                        <h1 className={`${shiba.className} my-4 mb-6 text-center text-3xl font-normal lg:text-8xl`}>
                             Smarter HR for Modern Teams
-            </h1>
+    </h1>
 
                         {/* Subtitle */}
                         <p className="mx-auto mb-6 max-w-2xl text-center text-muted-foreground lg:text-xl">
@@ -31,24 +31,14 @@ const Hero68 = () => {
 
                         {/* Buttons */}
                         <div className="flex flex-col justify-center gap-2 sm:flex-row">
-                            <Button size="lg" className="w-full gap-2 sm:w-auto lg:mt-10">
-                                <div className="size-2 rounded-full bg-green-400"></div>
-                Start your free trial
-              </Button>
-                            <Button
-                                variant="outline"
-                                size="lg"
-                                className="w-full gap-2 sm:w-auto lg:mt-10"
-                            >
-                                <Avatar className="size-8 rounded-full ring-1 ring-input">
-                                    <AvatarImage
-                                        src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
-                                        alt="placeholder"
-                                    />
-                                </Avatar>
-                Schedule a demo
-              </Button>
+                            <a href="#contact">
+                                <Button size="lg" className="w-full gap-2 sm:w-auto lg:mt-10">
+                                    <div className="size-2 rounded-full bg-accent"></div>
+      Book a Demo
+    </Button>
+                            </a>
                         </div>
+
                     </div>
                 </div>
 

@@ -31,7 +31,7 @@ const Feature252 = () => {
 
               </p>
                             <h1 className="text-5xl font-medium tracking-tighter lg:text-7xl">
-                                Your AI Cyber Employee
+                                Your AI Digital Workforce
               </h1>
 
                         </div>
