@@ -9,10 +9,10 @@ const Cta15 = () => {
                     <div className="lg:texlf mx-auto max-w-md px-4 text-center md:px-0 lg:mx-0 lg:pb-20 lg:text-left">
                         <p className="mb-6 font-medium">Ready to get started?</p>
                         <h2 className={`${shiba.className} mb-6 text-4xl font-normal md:text-5xl`}>
-                            Revolutionize Your Acounting in Minutes
+                            Revolutionize Project Delivery in Minutes
 </h2>
                         <p className="text-lg text-muted-foreground">
-                            Try our AI-powered Acounting platform risk-free. Save hours each week and focus on building a stronger team.
+                            Try Rewan PMS risk-free and experience 50% faster project execution with AI-powered workflows.
                         </p>
                         <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                             <Button>Get Started</Button>

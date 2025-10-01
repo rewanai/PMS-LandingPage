@@ -109,7 +109,7 @@ const Footer8 = ({
                     {/* Bottom Bar */}
                     <div className="mt-20 flex flex-col justify-between gap-4 border-t border-white/30 pt-8 text-sm font-medium text-white/80 lg:flex-row lg:items-center">
                         <p>
-                            <span className="mr-1 font-bold text-white">Rewan ACCT</span>
+                            <span className="mr-1 font-bold text-white">Rewan PMS</span>
           © {new Date().getFullYear()} All rights reserved.
         </p>
                     </div>

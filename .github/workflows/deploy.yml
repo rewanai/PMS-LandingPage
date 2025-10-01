@@ -40,7 +40,7 @@ jobs:
         run: touch ./out/.nojekyll
 
       - name: Add CNAME file for custom domain
-        run: echo "crm.rewan.ai" > ./out/CNAME # change to sulv.rewan.ai if needed
+        run: echo "pms.rewan.ai" > ./out/CNAME # change o sulv.rewan.ai if needed
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

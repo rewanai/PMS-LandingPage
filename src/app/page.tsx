@@ -14,8 +14,8 @@ export default function Home() {
       <Navbar17 />
       <Hero68 />
       <Compare1 />
-      <Feature130 />
       <Feature274 />
+      <Feature130 />
       <Timeline4 />
       <Cta15 />
       <Footer8 />
