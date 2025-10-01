@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
 import { CheckCircle2, Globe, Lock, Star, Zap } from "lucide-react";
 import { shiba } from "@/lib/fonts";
@@ -128,7 +129,14 @@ const Hero68 = () => {
 
 export { Hero68 };
 
-const FloatingLabel = ({ icon, children, className, delay = 0 }) => (
+type FloatingLabelProps = {
+    icon: React.ReactNode;
+    children: React.ReactNode;
+    className?: string;
+    delay?: number;
+};
+
+const FloatingLabel = ({ icon, children, className, delay = 0 }: FloatingLabelProps) => (
     <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -143,6 +151,7 @@ const FloatingLabel = ({ icon, children, className, delay = 0 }) => (
         {children}
     </motion.div>
 );
+
 
 const BrowserMockup = ({
     className = "",
@@ -211,8 +220,8 @@ const Card = ({
     scale,
     children,
 }: {
-    rotate: any;
-    scale: any;
+    rotate: MotionValue<number>;
+    scale: MotionValue<number>;
     children: React.ReactNode;
 }) => (
         <motion.div
