@@ -17,9 +17,9 @@ const sections = [
         title: "Company",
         links: [
             { name: "About", href: "https://rewan.ai" },
-            { name: "Team", href: "#" },
+            { name: "Team", href: "https://rewan.ai" },
 
-            { name: "Contact", href: "#" },
+            { name: "Contact", href: "https://rewan.ai" },
         ],
     },
 ];
@@ -99,7 +99,7 @@ const Footer8 = ({
                             </div>
                             <p className="mt-1 text-xs font-medium text-white/80">
                                 By submitting, you agree to our{" "}
-                                <a href="#" className="ml-1 text-white underline hover:text-gray-200">
+                                <a href="https://rewan.ai" className="ml-1 text-white underline hover:text-gray-200">
                                     Privacy Policy
             </a>
                             </p>
@@ -109,7 +109,7 @@ const Footer8 = ({
                     {/* Bottom Bar */}
                     <div className="mt-20 flex flex-col justify-between gap-4 border-t border-white/30 pt-8 text-sm font-medium text-white/80 lg:flex-row lg:items-center">
                         <p>
-                            <span className="mr-1 font-bold text-white">Rewan CRM</span>
+                            <span className="mr-1 font-bold text-white">Rewan ACCT</span>
           © {new Date().getFullYear()} All rights reserved.
         </p>
                     </div>

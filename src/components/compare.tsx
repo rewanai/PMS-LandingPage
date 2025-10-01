@@ -1,117 +1,127 @@
-import {
-    BadgePercent,
-    CheckCircle,
-    CircleMinus,
-    Code2,
-    Headset,
-    LineChart,
-    Users,
-} from "lucide-react";
-import React from "react";
-import { shiba } from "@/lib/fonts"; // ✅ adjust path as needed
+import { Calendar, Target, Trophy, Users } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-
-const Compare3 = () => {
+import { Separator } from "@/components/ui/separator";
+import { shiba } from "@/lib/fonts";
+const Compare1 = () => {
     return (
-        <section id="whyUs" className="py-32">
-            <div className="mx-auto w-full max-w-7xl px-6">
-                {/* Header */}
-                <div className="flex flex-col items-center gap-4 text-center">
-                    <Badge variant="outline">Why Us</Badge>
-                    <h2 className={`${shiba.className} mx-auto max-w-2xl text-4xl font-normal sm:text-5xl`}>
-                        See How Rewan HR Outperforms Manual HR and Other Tools
+        <section className="py-32 bg-accent/45">
+            <div className="container mx-auto max-w-[1280px]">
+                <div className="grid place-content-center gap-10 lg:grid-cols-2">
+                    <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-4 lg:items-start">
+                        <Badge
+                            variant="outline"
+                            className="flex items-center gap-1 px-2.5 py-1.5 text-sm"
+                        >
+                            <Trophy className="h-auto w-4" />
+                            Key Aspects
+                        </Badge>
+                        <h2
+                            className={`${shiba.className} text-primary text-center text-3xl font-medium lg:text-left lg:text-5xl`}
+                        >
+                            Empowering Smarter Finance for Growing Teams
 </h2>
 
-                    <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
-                        Discover why growing teams choose our AI-powered HR solution over spreadsheets, email approvals, and outdated systems
-            </p>
+                        <p className="text-center text-muted-foreground lg:text-left lg:text-lg">
+                            Rewan ACCT is more than an accounting tool — it’s your
+                            financial command center. With <strong>Ghazy</strong>,
+                            our AI accountant, we simplify payroll, invoicing,
+                            and tax compliance so your team can focus on growth.
+                        </p>
+
+                        {/* Stats Row */}
+                        <div className="mt-9 flex w-full flex-col justify-center gap-6 md:flex-row lg:justify-start">
+                            <div className="flex justify-between gap-6">
+                                <div className="mx-auto">
+                                    <p className="text-primary mb-1.5 text-3xl font-bold">100%</p>
+                                    <p className="text-muted-foreground">
+                                        VAT & labor law compliant
+                                    </p>
+                                </div>
+                                <Separator orientation="vertical" className="h-auto" />
+                                <div className="mx-auto">
+                                    <p className="text-primary mb-1.5 text-3xl font-bold">50+</p>
+                                    <p className="text-muted-foreground">
+                                        Employees onboarded
+                                    </p>
+                                </div>
+                            </div>
+                            <Separator
+                                orientation="vertical"
+                                className="hidden h-auto md:block"
+                            />
+                            <Separator orientation="horizontal" className="block md:hidden" />
+                            <div className="flex justify-between gap-6">
+                                <div className="mx-auto">
+                                    <p className="text-primary mb-1.5 text-3xl font-bold">24/7</p>
+                                    <p className="text-muted-foreground">
+                                        Ghazy always available
+                                    </p>
+                                </div>
+                                <Separator orientation="vertical" className="h-auto" />
+                                <div className="mx-auto">
+                                    <p className="text-primary mb-1.5 text-3xl font-bold">
+                                        0 Misses
+                                    </p>
+                                    <p className="text-muted-foreground">
+                                        Payroll & VAT always on time
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img
+                        src="F3.png"
+                        alt="placeholder"
+                        className="ml-auto max-h-[450px] w-full rounded-xl object-cover"
+                    />
                 </div>
 
-                {/* Responsive Table */}
-                <div className="-mx-6 overflow-x-auto">
-                    <div className="mt-14 min-w-[600px] grid grid-cols-3 md:min-w-full md:grid-cols-3">
-                        {/* Empty top-left */}
-                        <div className="border-b border-border p-5"></div>
-
-                        {/* Rewan HR column */}
-                        <div className="flex flex-col items-center gap-2 sticky top-0 z-10 border-b border-border bg-muted p-5 rounded-t-2xl">
-                            <img src="/Logoo.png" alt="Rewan HR logo" className="size-8" />
-                            <p className="text-lg font-semibold">Rewan HR</p>
-                            <p className="mt-1 text-center text-sm text-muted-foreground">
-                                Built with customer needs in mind
-                </p>
+                {/* Three Pillars */}
+                <div className="mt-10 grid gap-6 md:grid-cols-3">
+                    <div className="flex flex-col gap-4">
+                        <div className="gap flex flex-col gap-3 rounded-lg border p-6">
+                            <div className="flex flex-col items-center gap-2 lg:flex-row">
+                                <Calendar className="h-auto w-6 stroke-primary" />
+                                <h3 className="text-primary text-center text-lg font-medium lg:text-left">
+                                    Why Teams Choose Rewan ACCT
+                                </h3>
+                            </div>
+                            <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+                                AI-driven simplicity designed for everyone — even
+                                non-finance users.
+                            </p>
                         </div>
+                    </div>
 
-                        {/* Traditional HR Tools column */}
-                        <div className="flex flex-col items-center gap-2 sticky top-0 z-10 border-b border-border bg-background p-5">
-                            <img src="/mt.png" alt="Traditional HR logo" className="size-8" />
-                            <p className="text-lg font-semibold">Traditional HR Tools</p>
-                            <p className="mt-1 text-center text-sm text-muted-foreground">
-                                A common alternative solution
-                </p>
+                    <div className="flex flex-col gap-4">
+                        <div className="gap flex flex-col gap-3 rounded-lg border p-6">
+                            <div className="flex flex-col items-center gap-2 lg:flex-row">
+                                <Target className="h-auto w-6 stroke-primary" />
+                                <h3 className="text-primary text-center text-lg font-medium lg:text-left">
+                                    Our Purpose
+                                </h3>
+                            </div>
+                            <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+                                Automate routine tasks, reduce errors, and
+                                empower smarter decision-making.
+                            </p>
                         </div>
+                    </div>
 
-                        {/* Why Us Rows */}
-                        {[
-                            {
-                                icon: <Users className="size-4 shrink-0" />,
-                                label: "Team Overview",
-                                rewan: "Comprehensive employee directory & profiles",
-                                legacy: "Scattered across files and email threads",
-                            },
-                            {
-                                icon: <Users className="size-4 shrink-0" />,
-                                label: "Automation",
-                                rewan: "Runs 24/7, reducing HR workload",
-                                legacy: "Entirely manual",
-                            },
-                            {
-                                icon: <BadgePercent className="size-4 shrink-0" />,
-                                label: "Leave Management",
-                                rewan: "One-click requests & approvals",
-                                legacy: "Manual forms and slow response times",
-                            },
-                            {
-                                icon: <Code2 className="size-4 shrink-0" />,
-                                label: "Attendance Tracking",
-                                rewan: "Real-time check-in/out with analytics",
-                                legacy: "Manual logs and late updates",
-                            },
-                            {
-                                icon: <LineChart className="size-4 shrink-0" />,
-                                label: "Contract Management",
-                                rewan: "Secure storage with version history",
-                                legacy: "Risk of losing documents or using outdated versions",
-                            },
-                            {
-                                icon: <Headset className="size-4 shrink-0" />,
-                                label: "Dashboards & Reporting",
-                                rewan: "Instant role-based insights",
-                                legacy: "Hours spent compiling reports",
-                            },
-                        ].map(({ icon, label, rewan, legacy }, idx) => (
-                            <React.Fragment key={idx}>
-                                <div className="flex items-center gap-2 border-b border-border p-5">
-                                    {icon}
-                                    <span className="font-semibold">{label}</span>
-                                </div>
-                                <div className="flex flex-col items-center justify-center gap-2 border-b border-border bg-muted p-5 text-center">
-                                    <CheckCircle className="size-5 text-green-600" />
-                                    <span className="text-xs text-muted-foreground">{rewan}</span>
-                                </div>
-                                <div className="flex flex-col items-center justify-center gap-2 border-b border-border text-center p-5">
-                                    <CircleMinus className="size-5 text-red-600" />
-                                    <span className="text-xs text-muted-foreground">{legacy}</span>
-                                </div>
-                            </React.Fragment>
-                        ))}
-
-                        {/* Footer Row */}
-                        <div className="border-border p-5"></div>
-                        <div className="flex items-center justify-center gap-2 rounded-b-2xl border-border bg-muted p-5">
-                            <Button className="w-full">Try Rewan HR today</Button>
+                    <div className="flex flex-col gap-4">
+                        <div className="gap flex flex-col gap-3 rounded-lg border p-6">
+                            <div className="flex flex-col items-center gap-2 lg:flex-row">
+                                <Users className="h-auto w-6 stroke-primary" />
+                                <h3 className="text-primary text-center text-lg font-medium lg:text-left">
+                                    Our Finance Expertise
+                                </h3>
+                            </div>
+                            <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+                                Built for Oman — fully aligned with VAT, tax,
+                                and labor regulations.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -120,4 +130,4 @@ const Compare3 = () => {
     );
 };
 
-export { Compare3 };
+export { Compare1 };

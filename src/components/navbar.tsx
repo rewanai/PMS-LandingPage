@@ -64,7 +64,7 @@ export function Navbar17() {
                     <a href={NAV_LOGO.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                         <img
                             src={NAV_LOGO.src}
-                            className="max-h-48 w-10"
+                            className="max-h-78 w-15"
                             alt={NAV_LOGO.alt}
                         />
                     </a>

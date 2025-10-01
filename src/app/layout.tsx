@@ -3,7 +3,7 @@ import "./globals.css";
 import { shiba } from "../lib/fonts"; // ✅ adjust if layout is not inside /app
 
 export const metadata: Metadata = {
-  title: "HR Landing Page",
+  title: "ACCT Landing Page",
   description: "Modern UI with Next.js + Tailwind + shadcn",
 };
 
