@@ -15,16 +15,22 @@ import {
 
 import { cn } from "@/lib/utils";
 import { shiba } from "@/lib/fonts";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const fadeInUp = {
+
+const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     show: (i: number) => ({
         opacity: 1,
         y: 0,
-        transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
+        transition: {
+            delay: i * 0.15,
+            duration: 0.6,
+            ease: [0.16, 1, 0.3, 1], // ✅ easeOut cubic-bezier
+        },
     }),
 };
+
 
 const Compare1 = () => {
     return (
