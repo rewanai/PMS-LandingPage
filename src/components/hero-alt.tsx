@@ -108,7 +108,7 @@ const Hero68 = () => {
 
                 </motion.div>
 
-                {/* ✅ Animated Browser */}
+                {/* ✅ Animated Browserrr */}
                 <ContainerScroll titleComponent="">
                     <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
                         <img
